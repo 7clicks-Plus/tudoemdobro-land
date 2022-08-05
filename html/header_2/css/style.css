@@ -121,7 +121,7 @@ h6 {
 
 a,
 a:visited {
-  color: #685d9f;
+  color: #ff4b00;
   -webkit-transition: color 0.2s ease, background 0.2s ease, padding 0.2s ease,
     border 0.2s ease, outline 0.2s ease, opacity 0.2s ease-in-out;
   transition: color 0.2s ease, background 0.2s ease, padding 0.2s ease,
@@ -413,7 +413,7 @@ input[type='button'].btn-white,
 input[type='submit'].btn-white,
 input[type='reset'].btn-white,
 button.btn-white {
-  color: #685d9f !important;
+  color: #ff4b00 !important;
   background-color: #fff;
   border-color: #fff;
 }
@@ -427,7 +427,7 @@ input[type='button'].btn-purple.btn-border,
 input[type='submit'].btn-purple.btn-border,
 input[type='reset'].btn-purple.btn-border,
 button.btn-purple.btn-border {
-  color: #685d9f !important;
+  color: #ff4b00 !important;
   background-color: transparent;
 }
 .btn-custom.btn-blue.btn-border,
@@ -1096,7 +1096,7 @@ button.close:hover {
   top: 4px;
   left: 0px;
   width: 60px;
-  color: #685d9f;
+  color: #ff4b00;
   font-size: 18px;
   text-align: center;
 }
@@ -1458,7 +1458,7 @@ button.close:hover {
 }
 #navigation_affix .nav > li > a:hover,
 #navigation_affix .nav > li.active > a {
-  color: #685d9f;
+  color: #ff4b00;
 }
 
 /* Header Content */
@@ -1559,7 +1559,7 @@ button.close:hover {
   margin-right: -3px;
 }
 #header .header-content .header-txt .header-video li a:hover figure .ion {
-  color: #685d9f;
+  color: #ff4b00;
   background: #fff;
 }
 #header .header-content .header-txt .header-video li p {
@@ -3349,22 +3349,22 @@ button.close:hover {
     float: none;
   }
   #header .navbar-nav {
-    background-color: #685d9f;
+    background-color: #ff4b00;
     padding: 7px 0px;
     margin: 0px;
   }
   #header .navbar-toggle {
-    background-color: #685d9f;
+    background-color: #ff4b00;
     margin: 3px 0px;
-    border-color: #685d9f;
+    border-color: #ff4b00;
   }
   #header .navbar-toggle.collapsed {
-    background-color: #685d9f;
-    border-color: #685d9f;
+    background-color: #ff4b00;
+    border-color: #ff4b00;
   }
   #header .navbar-toggle.collapsed:hover {
-    background-color: #685d9f;
-    border-color: #685d9f;
+    background-color: #ff4b00;
+    border-color: #ff4b00;
   }
   #header .navbar-toggle .icon-bar {
     background-color: #fff;
