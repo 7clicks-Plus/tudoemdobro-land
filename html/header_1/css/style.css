@@ -34,7 +34,6 @@ body {
 }
 .bg-img {
   color: #fff;
-  background: #2b2f3e center no-repeat;
   background-size: cover;
 }
 .bg-img .bg-overlay {
