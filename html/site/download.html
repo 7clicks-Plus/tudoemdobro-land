@@ -5,8 +5,64 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tudo em dobro</title>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
   </head>
   <body>
     <!-- if android -->
+    <img
+      src="https://tudoemdobro.com.br/images/logo_td.png"
+      alt="logo"
+      class="img"
+    />
+    <h4>Aguarde</h4>
+    <h5>Redirecionando para loja.</h5>
   </body>
+
+  <style>
+    body {
+      text-align: center;
+      padding: 10px;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    .img {
+      width: 250px;
+    }
+  </style>
+
+  <script>
+    /**
+     * Determine the mobile operating system.
+     * This function returns one of 'iOS', 'Android', 'Windows Phone', or 'unknown'.
+     *
+     * @returns {String}
+     */
+    function getMobileOperatingSystem() {
+      var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+      if (/android/i.test(userAgent)) {
+        console.log("Android!");
+        window.location.href = "https://play.google.com/store/games";
+        // return "Android";
+      }
+
+      // iOS detection from: http://stackoverflow.com/a/9039885/177710
+      if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+        console.log("iOS!");
+        window.location.href = "https://www.apple.com/br/store";
+        // return "iOS";
+      }
+
+      return "unknown";
+    }
+
+    // A $( document ).ready() block.
+    $(document).ready(function () {
+      getMobileOperatingSystem();
+    });
+  </script>
 </html>
