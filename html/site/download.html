@@ -46,14 +46,16 @@
 
       if (/android/i.test(userAgent)) {
         console.log("Android!");
-        window.location.href = "https://play.google.com/store/games";
+        window.location.href =
+          "https://play.google.com/store/apps/details?id=br.com.tudoemdobro";
         // return "Android";
       }
 
       // iOS detection from: http://stackoverflow.com/a/9039885/177710
       if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
         console.log("iOS!");
-        window.location.href = "https://www.apple.com/br/store";
+        window.location.href =
+          "https://apps.apple.com/us/app/tudo-em-dobro/id1641154746";
         // return "iOS";
       }
 
