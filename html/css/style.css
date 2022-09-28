@@ -148,9 +148,8 @@ ul li {
 }
 
 img {
-  width: auto\9;
   height: auto;
-  max-width: 100%;
+  
   vertical-align: middle;
   border: 0px;
   -ms-interpolation-mode: bicubic;
@@ -229,6 +228,13 @@ input[type='color']::-webkit-color-swatch-wrapper {
 }
 input[type='color']::-webkit-color-swatch {
   border: 0px;
+}
+.experiencia{
+  width: 409px;
+  position: absolute;
+  z-index: 2;
+  right: 9rem;
+  top: 14rem;
 }
 @-moz-document url-prefix() {
   input[type='color'] {
@@ -1472,7 +1478,7 @@ button.close:hover {
   background-repeat: repeat;
 }
 #header .header-content .header-overlay {
-  padding: 180px 0px 100px;
+  padding: 12rem 0px 60px;
 }
 .ie #header .header-content .header-overlay {
   background: url(../images/ie-bg-header-overlay.png) repeat top left;
@@ -1502,10 +1508,7 @@ button.close:hover {
 #header.header-page .header-content .header-txt p {
   margin: 15px 0px 0px;
 }
-#header .header-content .header-txt .header-heading img {
-  max-height: 60px;
-  margin-bottom: 30px;
-}
+
 #header .header-content .header-txt .header-heading h1 {
   color: #fff;
   font-size: 68px;
@@ -1521,24 +1524,22 @@ button.close:hover {
   font-weight: 300;
   margin: 0px;
 }
-#header .header-content .header-txt .header-video {
+ .header-video {
   overflow: hidden;
   padding: 0px;
   margin: 30px -10px 0px;
 }
-#header .header-content .header-txt .header-video li {
+ .header-video li {
   list-style-type: none;
-  float: left;
-  width: 50%;
   text-align: center;
   padding: 0px 10px;
 }
-#header .header-content .header-txt .header-video li figure {
+ .header-video li figure {
   overflow: hidden;
   position: relative;
   border-radius: 8px;
 }
-#header .header-content .header-txt .header-video li figure .ion {
+ .header-video li figure .ion {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -1552,21 +1553,21 @@ button.close:hover {
   -webkit-transition: color 0.2s ease, background 0.2s ease;
   transition: color 0.2s ease, background 0.2s easet;
 }
-.ie #header .header-content .header-txt .header-video li figure .ion {
+.header-video li figure .ion {
   background: url(../images/ie-bg-header-video.png) repeat top left;
 }
-#header .header-content .header-txt .header-video li figure .ion:before {
+ .header-video li figure .ion:before {
   margin-right: -3px;
 }
-#header .header-content .header-txt .header-video li a:hover figure .ion {
+.header-video li a:hover figure .ion {
   color: #ff4b00;
   background: #fff;
 }
-#header .header-content .header-txt .header-video li p {
+.header-video li p {
   font-size: 13px;
   line-height: 18px;
   margin: 7px 0px 0px;
-  opacity: 0.6;
+  color: #fff;
 }
 #header .header-content .header-txt .header-btn {
   margin-top: 40px;
@@ -1581,26 +1582,30 @@ button.close:hover {
   overflow: hidden;
   padding: 0px;
   margin: 0px;
+  margin: auto;
+  width: fit-content;
 }
-#header .header-content .header-txt .header-btn ul li {
-  list-style-type: none;
-  float: left;
-  margin-right: 40px;
-}
-#header .header-content .header-txt .header-btn ul li:last-child {
-  padding-right: 0px;
-  margin-right: 0px;
-}
+
 #header .header-content .header-txt .header-btn ul li a {
   float: left;
   color: #fff;
-  font-size: 48px;
+  font-size: 84px;
 }
 #header .header-content .header-txt .header-btn ul li a:hover {
   opacity: 0.6;
 }
 
+
 /* ========================= Elements ========================= */
+
+.baixar-agora{
+  background: #4f87f7;
+  font-weight: 600;
+  width: fit-content;
+  margin: 0 auto 10px auto;
+  padding: 3px 10px;
+  transform: rotate(-2deg)
+}
 
 .affa-feature-icon {
   margin-bottom: 50px;
@@ -1976,6 +1981,12 @@ button.close:hover {
   opacity: 0.8;
 }
 
+.tamanho-esp-ios{
+  height: 33rem
+}
+.tamanho-esp-andorid{
+  height: 4rem
+}
 /* ========================= Media Queries ========================= */
 
 @media (max-width: 1640px) {
@@ -1984,7 +1995,21 @@ button.close:hover {
   }
 }
 
+@media (max-width: 1200px) {
+  .experiencia{
+    top: 10rem;
+    right: 4rem;
+  }
+  .tamanho-esp-andorid{
+    height: 4rem
+  }
+  .tamanho-esp-ios{
+    height: 28rem
+  }
+}
+
 @media (min-width: 1200px) {
+  
   .padding-top0-lg {
     padding-top: 0px !important;
   }
@@ -2583,7 +2608,7 @@ button.close:hover {
   }
 
   #header .header-content .header-overlay {
-    padding: 160px 0px 90px;
+    padding: 100px 0px 60px;
   }
   #header.header-page .header-content .header-overlay {
     padding-top: 150px;
@@ -2649,6 +2674,9 @@ button.close:hover {
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
+  .experiencia{
+    right: 4rem;
+  }
   .padding-top0-sm {
     padding-top: 0px !important;
   }
@@ -3413,14 +3441,14 @@ button.close:hover {
     font-size: 24px;
     line-height: 34px;
   }
-  #header .header-content .header-txt .header-video li figure .ion {
+ .header-video li figure .ion {
     width: 52px;
     height: 52px;
     font-size: 32px;
     line-height: 52px;
     margin: -26px 0px 0px -26px;
   }
-  #header .header-content .header-txt .header-video li figure .ion:before {
+   .header-video li figure .ion:before {
     margin-right: -4px;
   }
   #header .header-content .header-txt .header-btn p {
@@ -3428,10 +3456,11 @@ button.close:hover {
     line-height: 26px;
   }
   #header .header-content .header-txt .header-btn ul li {
-    display: inline-block;
-    float: none;
-    padding: 0px;
-    margin: 0px 15px 20px;
+    
+    display: inline;
+    float: left;
+    padding: 10px;
+    
   }
   #header .header-content .header-txt .header-btn ul li a {
     display: inline;
@@ -3595,17 +3624,17 @@ button.close:hover {
 }
 
 @media (max-width: 420px) {
-  #header .header-content .header-txt .header-video {
+  .header-video {
     margin-right: 0px;
     margin-left: 0px;
   }
-  #header .header-content .header-txt .header-video li {
+   .header-video li {
     float: none;
     width: auto;
     padding: 0px;
     margin-bottom: 20px;
   }
-  #header .header-content .header-txt .header-video li:last-child {
+   .header-video li:last-child {
     margin-bottom: 0px;
   }
   #header .header-content .header-img {
