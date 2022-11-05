@@ -145,8 +145,11 @@
 
     <div class="container-fluid">
       <div
-        class="row"
-        style="background-image: url(images/content/bg/bg-land-td.png)"
+        class="row hidden-xs"
+        style="
+          background-image: url(images/news/bg_tudo.jpg);
+          background-size: cover;
+        "
       >
         <div class="col-xs-12 text-center">
           <a href="index.html">
@@ -158,46 +161,72 @@
         </div>
       </div>
 
+      <div
+        class="row visible-xs"
+        style="background-image: url(images/news/vendawhatsapp.jpg)"
+      >
+        <div class="col-xs-12 text-center">
+          <a href="index.html">
+            <img
+              src="images/logo_td.png"
+              alt="Logo"
+              style="width: 24rem; padding: 3rem"
+          /></a>
+        </div>
+      </div>
+      <div class="row visible-xs">
+        <a href="#doPix">
+          <div style="height: 680px">
+            <img src="images/news/vendawhatsapp.jpg" width="100%" alt="" />
+          </div>
+        </a>
+      </div>
+
       <!-- #counter -->
-      <div id="counter" class="section-wrap padding-top40 padding-bottom100-xs">
+      <div id="counter" class="padding-top20 padding-bottom100-xs">
         <!-- .container -->
         <div class="container">
           <!-- .row -->
           <div class="row">
-            <div
-              class="col-xs-12 col-sm-12 col-md-6 hidden-xs d-none d-sm-block"
-            >
-              <img src="images/promo.jpeg" style="width: 100%" alt="Image" />
+            <div class="col-xs-12 col-sm-12 col-md-6 hidden-xs">
+              <!-- hidden-xs d-none d-sm-block -->
+              <img
+                src="images/news/vendawhatsapp.jpg"
+                style="width: 100%"
+                alt="Image"
+              />
             </div>
 
-            <div class="col-sm-12 col-md-6" <div class="padding-top0-xs">
-              <h2>PIX</h2>
-              <h5>Envie um Pix para o CNPJ:</h5>
-              <div class="btnMyPix" onclick="copyToClipboard('#p3')">
-                <span id="p3">financeiro@tudoemdobro.com.br</span>
+            <div id="doPix" class="col-xs-12 col-sm-12 col-md-6">
+              <div class="padding-top40">
+                <h2 class="padding-top40-xs">PIX</h2>
+                <h5>Envie um Pix para o CNPJ:</h5>
+                <div class="btnMyPix" onclick="copyToClipboard('#p3')">
+                  <span id="p3">financeiro@tudoemdobro.com.br</span>
 
-                <i class="las la-copy copy"></i>
-              </div>
-              <h5 style="color: #4ca733">
-                <i class="las la-check-circle"></i> No valor de
-                <b> R$ 109,00</b>
-              </h5>
-              <p class="margin-bottom40" style="color: #ff4b00">
-                Favorecido: Tx2 Marketing Digital LTDA
-              </p>
-              <div>
-                <p class="text-lg">
-                  Após fazer seu pix envie o comprovante Via Whats app, para
-                  liberação do seu bloco de ofertas
+                  <i class="las la-copy copy"></i>
+                </div>
+                <h5 style="color: #4ca733">
+                  <i class="las la-check-circle"></i> No valor de
+                  <b> R$ 109,00</b>
+                </h5>
+                <p class="margin-bottom40" style="color: #ff4b00">
+                  Favorecido: Tx2 Marketing Digital LTDA
                 </p>
+                <div>
+                  <p class="text-lg">
+                    Após fazer seu pix envie o comprovante Via Whats app, para
+                    liberação do seu bloco de ofertas
+                  </p>
 
-                <a
-                  href="https://api.whatsapp.com/send?phone=554598295541&text=Olá.%20Eu%20gostaria%20do%20de%20enviar%20um%20comprovante%20de%20pagamento%20via%20pix"
-                  class="btn btn-secondary btn-lg"
-                  style="background-color: #000; color: #fff"
-                >
-                  <i class="lab la-whatsapp whats"></i> Enviar o comprovante
-                </a>
+                  <a
+                    href="https://api.whatsapp.com/send?phone=554598295541&text=Olá.%20Eu%20gostaria%20do%20de%20enviar%20um%20comprovante%20de%20pagamento%20via%20pix"
+                    class="btn btn-secondary btn-lg"
+                    style="background-color: #000; color: #fff"
+                  >
+                    <i class="lab la-whatsapp whats"></i> Enviar o comprovante
+                  </a>
+                </div>
               </div>
             </div>
           </div>
