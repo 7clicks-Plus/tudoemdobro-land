@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+  <!--<![endif]-->
+
+  <head>
+    <!-- Your Basic Site Informations -->
+    <title>Tudo em Dobro</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="description"
+      content="TUDO EM DOBRO APP, Clube de Vantagens que oferece milhares de reais em benefícios em dobro nos melhores estabelecimentos das cidades participantes."
+    />
+    <meta name="keywords" content="Bloco, Ofertas, Gift, Cupom" />
+    <meta name="author" content="Lucas" />
+
+    <!-- Mobile Specific Meta -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+    <meta
+      name="facebook-domain-verification"
+      content="v8nsw8vojjggbsu5t6v7id0nc1s77u"
+    />
+
+    <!-- Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:100,300,300i,400,500,700"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/ionicons.min.css" />
+    <link rel="stylesheet" href="css/slick.css" />
+    <link rel="stylesheet" href="css/slick-theme.css" />
+    <link rel="stylesheet" href="css/jquery.fancybox.css" />
+    <link rel="stylesheet" href="css/animate.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <noscript>
+      <link rel="stylesheet" href="css/no-js.css" />
+    </noscript>
+
+    <!-- Favicons -->
+    <link rel="shortcut icon" href="images/favicon.png" />
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="images/apple-touch-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="images/apple-touch-icon-114x114.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"
+    />
+
+    <!-- Meta Pixel Code -->
+    <script>
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          n.callMethod
+            ? n.callMethod.apply(n, arguments)
+            : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = "2.0";
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(
+        window,
+        document,
+        "script",
+        "https://connect.facebook.net/en_US/fbevents.js"
+      );
+      fbq("init", "457442819738857");
+      fbq("track", "PageView");
+    </script>
+    <noscript
+      ><img
+        height="1"
+        width="1"
+        style="display: none"
+        src="https://www.facebook.com/tr?id=457442819738857&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
+    <style>
+      .btnMyPix {
+        padding: 15px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        color: #024bad;
+        font-weight: bold;
+        margin-bottom: 10px;
+        width: fit-content;
+        font-size: 1.5rem;
+      }
+      .whats {
+        color: #4ca733;
+        font-size: 24px;
+      }
+      .copy {
+        color: #4ca733;
+        font-size: 28px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <script type="text/javascript">
+      function copyToClipboard(element) {
+        var $temp = $("<input>");
+        $("body").append($temp);
+        $temp.val($(element).text()).select();
+        document.execCommand("copy");
+        $temp.remove();
+
+        let timerInterval;
+        Swal.fire({
+          icon: "success",
+          title: "Pix",
+          text: "Pix Copiado com sucesso.",
+          showConfirmButton: false,
+          timer: 1500,
+        });
+
+        // Swal.fire("Pix", "Pix Copiado com sucesso.", "success");
+      }
+    </script>
+
+    <div class="container-fluid">
+      <div
+        class="row"
+        style="background-image: url(images/content/bg/bg-land-td.png)"
+      >
+        <div class="col-xs-12 text-center">
+          <a href="index.html">
+            <img
+              src="images/logo_td.png"
+              alt="Logo"
+              style="width: 24rem; padding: 3rem"
+          /></a>
+        </div>
+      </div>
+
+      <!-- #counter -->
+      <div id="counter" class="section-wrap padding-top40 padding-bottom100-xs">
+        <!-- .container -->
+        <div class="container">
+          <!-- .row -->
+          <div class="row">
+            <div
+              class="col-xs-12 col-sm-12 col-md-6 hidden-xs d-none d-sm-block"
+            >
+              <img src="images/promo.jpeg" style="width: 100%" alt="Image" />
+            </div>
+
+            <div class="col-sm-12 col-md-6" <div class="padding-top0-xs">
+              <h2>PIX</h2>
+              <h5>Envie um Pix para o CNPJ:</h5>
+              <div class="btnMyPix" onclick="copyToClipboard('#p3')">
+                <span id="p3">financeiro@tudoemdobro.com.br</span>
+
+                <i class="las la-copy copy"></i>
+              </div>
+              <h5 style="color: #4ca733">
+                <i class="las la-check-circle"></i> No valor de
+                <b> R$ 109,00</b>
+              </h5>
+              <p class="margin-bottom40" style="color: #ff4b00">
+                Favorecido: Tx2 Marketing Digital LTDA
+              </p>
+              <div>
+                <p class="text-lg">
+                  Após fazer seu pix envie o comprovante Via Whats app, para
+                  liberação do seu bloco de ofertas
+                </p>
+
+                <a
+                  href="https://api.whatsapp.com/send?phone=554598295541&text=Olá.%20Eu%20gostaria%20do%20de%20enviar%20um%20comprovante%20de%20pagamento%20via%20pix"
+                  class="btn btn-secondary btn-lg"
+                  style="background-color: #000; color: #fff"
+                >
+                  <i class="lab la-whatsapp whats"></i> Enviar o comprovante
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- .row end -->
+      </div>
+      <!-- .container end -->
+    </div>
+    <!-- #counter end -->
+
+    <!-- #footer -->
+    <footer id="footer">
+      <!-- .container -->
+      <div class="container">
+        <div class="footer-links">
+          <a
+            href="https://www.instagram.com/tudoemdobrotoledo/"
+            class="link-icon"
+            title="Facebook"
+            ><i class="ion lab la-facebook-f"></i
+          ></a>
+
+          <a
+            href="https://www.instagram.com/tudoemdobrotoledo/"
+            class="link-icon"
+            title="Instagram"
+            ><i class="ion lab la-instagram"></i
+          ></a>
+          <a href="#" class="scrollup"
+            >Voltar ao início<i style="width: 1rem" class="ion las la-home"></i
+          ></a>
+        </div>
+
+        <div class="footer-copyright">
+          <p>
+            &copy; 2022 Todos os Direitos Reservados Tudo em Dobro -
+            Desenvolvido por
+            <a href="https://7clicks.dev" target="_blank">7clicks</a>.
+          </p>
+        </div>
+      </div>
+      <!-- .container end -->
+    </footer>
+    <!-- #footer end -->
+
+    <!-- JavaScripts -->
+    <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+    <script
+      type="text/javascript"
+      src="js/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/jquery.easing.min.js"></script>
+    <script type="text/javascript" src="js/smoothscroll.js"></script>
+    <script type="text/javascript" src="js/response.min.js"></script>
+    <script type="text/javascript" src="js/jquery.placeholder.min.js"></script>
+    <script type="text/javascript" src="js/jquery.fitvids.js"></script>
+    <script type="text/javascript" src="js/waypoints.min.js"></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
+    <script type="text/javascript" src="js/jquery.fancybox.pack.js"></script>
+    <script type="text/javascript" src="js/jquery.fancybox-media.js"></script>
+    <script type="text/javascript" src="js/jquery.counterup.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </body>
+</html>
