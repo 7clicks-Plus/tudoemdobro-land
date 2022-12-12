@@ -1985,7 +1985,7 @@ button.close:hover {
   height: 33rem
 }
 .tamanho-esp-andorid{
-  height: 4rem
+  height: 23rem
 }
 /* ========================= Media Queries ========================= */
 
@@ -2000,12 +2000,7 @@ button.close:hover {
     top: 10rem;
     right: 4rem;
   }
-  .tamanho-esp-andorid{
-    height: 4rem
-  }
-  .tamanho-esp-ios{
-    height: 28rem
-  }
+ 
 }
 
 @media (min-width: 1200px) {
@@ -3567,6 +3562,13 @@ button.close:hover {
 @media (max-width: 640px) {
   .img-padding-xs {
     padding: 0px 18%;
+  }
+
+  .tamanho-esp-andorid{
+    height: 12rem
+  }
+  .tamanho-esp-ios{
+    height: 28rem
   }
 
   #header .header-content .header-img {
